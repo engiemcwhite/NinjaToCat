@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Henge no Jutzu</title>
+    <script>
+        $(document).ready(function(){
+
+            $("img").click(function(){
+                var temp = $(this).attr("data-alt-src");
+                $(this).attr("data-alt-src",$(this).attr("src"));
+                $(this).attr("src",temp);
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <img src="ninja1.png" data-alt-src="cat1.jpg">
+    <img src="ninja2.png" data-alt-src="cat2.jpg">
+    <img src="ninja3.png" data-alt-src="cat3.jpg">
+    <img src="ninja4.png" data-alt-src="cat4.jpg">
+    <img src="ninja5.png" data-alt-src="cat5.jpg">
+</body>
+</html>
